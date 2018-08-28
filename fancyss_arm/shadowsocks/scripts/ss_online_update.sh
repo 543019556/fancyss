@@ -417,8 +417,9 @@ get_oneline_rule_now(){
 			return 3
 		fi
 		#产品信息错误
-		wrong=`cat /tmp/ssr_subscribe_file.txt|grep "{"`
-		if [ -n "$wrong" ];then
+		wrong1=`cat /tmp/ssr_subscribe_file.txt|grep "{"`
+		wrong2=`cat /tmp/ssr_subscribe_file.txt|grep "<"`
+		if [ -n "$wrong1" -o -n "$wrong2" ];then
 			return 2
 		fi
 		#订阅地址有跳转
@@ -475,8 +476,7 @@ get_oneline_rule_now(){
 			echo_date "现共有订阅SSR节点：$ONLINE_GET 个。"
 			echo_date "在线订阅列表更新完成!"
 		else
-			echo_date 该订阅链接不包含任何节点信息！请检查你的服务商是否更换了订阅链接！
-			let DEL_SUBSCRIBE +=1
+			return 3
 		fi
 	else
 		return 1
@@ -525,23 +525,23 @@ start_update(){
 			continue
 			;;
 		2)
-			echo_date "无法获取产品信息"
+			echo_date "无法获取产品信息！请检查你的服务商是否更换了订阅链接！"
 			rm -rf /tmp/ssr_subscribe_file.txt >/dev/null 2>&1 &
-			let DEL_SUBSCRIBE +=1
+			let DEL_SUBSCRIBE+=1
 			sleep 2
 			echo_date 退出订阅程序...
 			;;
 		3)
 			echo_date "该订阅链接不包含任何节点信息！请检查你的服务商是否更换了订阅链接！"
 			rm -rf /tmp/ssr_subscribe_file.txt >/dev/null 2>&1 &
-			let DEL_SUBSCRIBE +=1
+			let DEL_SUBSCRIBE+=1
 			sleep 2
 			echo_date 退出订阅程序...
 			;;
 		1|*)
 			echo_date "下载订阅失败...请检查你的网络..."
 			rm -rf /tmp/ssr_subscribe_file.txt >/dev/null 2>&1 &
-			let DEL_SUBSCRIBE +=1
+			let DEL_SUBSCRIBE+=1
 			sleep 2
 			echo_date 退出订阅程序...
 			;;
@@ -556,6 +556,7 @@ start_update(){
 			do
 				MATCH=`cat /tmp/group_info.txt | grep $local_group`
 				if [ -z "$MATCH" ];then
+					echo_date "==================================================================="
 					echo_date $local_group 节点已经不再订阅，将进行删除... 
 					confs_nu=`dbus list ssconf |grep "$local_group"| cut -d "=" -f 1|cut -d "_" -f 4`
 					for conf_nu in $confs_nu
