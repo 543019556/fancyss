@@ -1372,6 +1372,7 @@
 .*\b17446\.com
 .*\b17558\.net
 .*\b17566\.com
+.*\b1758\.com
 .*\b175club\.com
 .*\b175dns\.com
 .*\b175game\.com
@@ -1468,6 +1469,7 @@
 .*\b17ok\.com
 .*\b17oko\.com
 .*\b17one8\.com
+.*\b17palyba\.com
 .*\b17pr\.com
 .*\b17ps8\.com
 .*\b17qcc\.com
@@ -5591,6 +5593,7 @@
 .*\b90snake\.com
 .*\b90tank\.com
 .*\b90tiyu\.com
+.*\b90vm\.com
 .*\b90vs\.com
 .*\b90wwq\.com
 .*\b90yxw\.com
@@ -8814,6 +8817,7 @@
 .*\bbiqing\.me
 .*\bbiquan\.be
 .*\bbiquan\.link
+.*\bbiqudao\.com
 .*\bbiqudu\.com
 .*\bbiquge\.cc
 .*\bbiquge\.com\.tw
@@ -9372,6 +9376,7 @@
 .*\bbs008\.com
 .*\bbschaowen\.com
 .*\bbscream\.net
+.*\bbscstorage\.net
 .*\bbsh\.me
 .*\bbshare\.com
 .*\bbshou8\.com
@@ -11360,6 +11365,7 @@
 .*\bchiphell\.com
 .*\bchiplayout\.net
 .*\bchipsbank\.com
+.*\bchipsec\.com
 .*\bchipspark\.com
 .*\bchipwings\.com
 .*\bchiq-cloud\.com
@@ -12351,6 +12357,7 @@
 .*\bcobenet\.com
 .*\bcobo\.com
 .*\bcocblo\.com
+.*\bcoccccc\.cc
 .*\bcocimg\.com
 .*\bcoco90\.com
 .*\bcocoachina\.com
@@ -17235,6 +17242,7 @@
 .*\bgamehui\.com
 .*\bgameinns\.com
 .*\bgamejob\.net
+.*\bgamelanglive\.com
 .*\bgameloog\.com
 .*\bgamemei\.com
 .*\bgameol\.com
@@ -19526,6 +19534,7 @@
 .*\bhillwoodhome\.net
 .*\bhimaker\.com
 .*\bhimovie\.net
+.*\bhimve\.com
 .*\bhimy2\.com
 .*\bhinabian\.com
 .*\bhinavi\.net
@@ -22807,6 +22816,7 @@
 .*\bjiulingwan\.com
 .*\bjiuliuwangluo\.com
 .*\bjiulovejiua\.com
+.*\bjiumaster\.com
 .*\bjiumei\.com
 .*\bjiumei8\.com
 .*\bjiupaicn\.com
@@ -24716,6 +24726,7 @@
 .*\blangke\.com
 .*\blanglang\.cc
 .*\blanglib\.com
+.*\blanglive\.com
 .*\blangmanzg\.com
 .*\blangqixiaozu\.com
 .*\blangren\.net
@@ -24760,6 +24771,7 @@
 .*\blanvige\.com
 .*\blanxicy\.com
 .*\blanxiongsports\.com
+.*\blanyes\.org
 .*\blanyingblog\.com
 .*\blanyingwang\.com
 .*\blanyuevilla\.com
@@ -28509,6 +28521,7 @@
 .*\bniug8\.com
 .*\bniugame\.net
 .*\bniugp\.com
+.*\bniuhemoon\.xyz
 .*\bniujinniu\.com
 .*\bniukk\.com
 .*\bniuniuhaoguanjia\.net
@@ -35204,6 +35217,7 @@
 .*\btinysou\.com
 .*\btinyxd\.me
 .*\btinyyuan\.com
+.*\btiojk\.com
 .*\btip4mac\.com
 .*\btipask\.com
 .*\btipdm\.com
@@ -36628,6 +36642,7 @@
 .*\bvasee\.com
 .*\bvauoo\.com
 .*\bvbidc\.com
+.*\bvbieu\.com
 .*\bvboba\.com
 .*\bvbuge\.com
 .*\bvbuluo\.com
@@ -41825,6 +41840,7 @@
 .*\bywlm\.net
 .*\bywnz\.com
 .*\bywrf123\.com
+.*\bywrjgzs\.com
 .*\bywsem\.com
 .*\bywt\.cc
 .*\bywtx\.cc
@@ -43042,6 +43058,7 @@
 .*\bzjcrjzj\.com
 .*\bzjdata\.net
 .*\bzjdfd\.com
+.*\bzjgas\.net
 .*\bzjgj168\.com
 .*\bzjgmsw\.com
 .*\bzjgrrb\.com
@@ -43443,6 +43460,7 @@
 .*\bzx7b\.com
 .*\bzx915\.com
 .*\bzx98\.com
+.*\bzxcs8\.com
 .*\bzxd\.com
 .*\bzxdyw\.com
 .*\bzxgzs\.com
