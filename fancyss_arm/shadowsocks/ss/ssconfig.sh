@@ -8,8 +8,7 @@ source /koolshare/scripts/base.sh
 source helper.sh
 # Variable definitions
 alias echo_date='echo 【$(TZ=UTC-8 date -R +%Y年%m月%d日\ %X)】:'
-ss_basic_version_local=`cat /koolshare/ss/version`
-dbus set ss_basic_version_local=$ss_basic_version_local
+dbus set ss_basic_version_local=`cat /koolshare/ss/version`
 LOG_FILE=/tmp/syslog.log
 CONFIG_FILE=/koolshare/ss/ss.json
 V2RAY_CONFIG_FILE_TMP="/tmp/v2ray_tmp.json"
@@ -124,7 +123,9 @@ kill_process(){
 	v2ray_process=`pidof v2ray`
 	if [ -n "$v2ray_process" ];then 
 		echo_date 关闭V2Ray进程...
+		# 有时候killall杀不了v2ray进程，所以用不同方式杀两次
 		killall v2ray >/dev/null 2>&1
+		kill -9 "$v2ray_process" >/dev/null 2>&1
 	fi
 	ssredir=`pidof ss-redir`
 	if [ -n "$ssredir" ];then 
